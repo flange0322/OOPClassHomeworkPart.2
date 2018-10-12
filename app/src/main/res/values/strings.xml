@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ListenerTry</string>
+    <string name="edittext_Name">Name</string>
+    <string name="btn_Click">Cilck</string>
+</resources>
