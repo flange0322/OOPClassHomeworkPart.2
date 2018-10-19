@@ -21,5 +21,5 @@ public abstract class AOperator {
         setNum_B(num_B);
     }
 
-    public abstract double getAns() throws DivisionException;
+    public abstract double getAns() throws Exception,DivisionException;
 }

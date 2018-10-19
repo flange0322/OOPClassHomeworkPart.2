@@ -2,20 +2,30 @@ package com.example.cjcu.listenertry;
 
 public class OperatorFactory {
 
-    public static AOperator create(String oper){
+    public enum Operator{
+        Add,
+        Sub,
+        Mul,
+        Div,
+        Pow,
+    }
+    public static AOperator create(Operator oper){
         AOperator ao = null;
         switch (oper){
-            case "+":
+            case Add:
                 ao = new Add();
                 break;
-            case "-":
+            case Sub:
                 ao = new Sub();
                 break;
-            case "*":
+            case Mul:
                 ao = new mul();
                 break;
-            case "/":
+            case Div:
                 ao = new division();
+                break;
+            case Pow:
+                ao = new Power();
                 break;
             default:
                 break;

@@ -6,7 +6,7 @@ public class Add extends AOperator {
         super();
     }
 
-    public double getAns() {
+    public double getAns(){
         return num_A+num_B;
     }
 }
