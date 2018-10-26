@@ -2,4 +2,5 @@
     <string name="app_name">ListenerTry</string>
     <string name="edittext_Name">Name</string>
     <string name="btn_Click">Cilck</string>
+    <string name="title_activity_sub2">activity_sub2</string>
 </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_sub2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/money_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="輸入單價金額" />
+
+        <EditText
+            android:id="@+id/quantity_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="輸入個數" />
+
+        <Button
+            android:id="@+id/Cal_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="CalClick"
+            android:text="計算" />
+
+        <TextView
+            android:id="@+id/show_SumMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="PreviousPage"
+            android:text="上一頁" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

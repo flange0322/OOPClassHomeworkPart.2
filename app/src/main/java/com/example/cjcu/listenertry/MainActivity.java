@@ -1,5 +1,6 @@
 package com.example.cjcu.listenertry;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.example.cjcu.listenertry.Calculator.AOperator;
+import com.example.cjcu.listenertry.Calculator.DivisionException;
+import com.example.cjcu.listenertry.Calculator.OperatorFactory;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText mEdittext_name1;
@@ -53,5 +59,11 @@ public class MainActivity extends AppCompatActivity {
         mEdittext_name2 = (EditText) findViewById(R.id.editText2);
         mTextview = (TextView) findViewById(R.id.textView);
         operList = (Spinner) findViewById(R.id.OperList);
+    }
+
+    public void NextPage(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,activity_sub2.class);
+        startActivity(intent);
     }
 }
